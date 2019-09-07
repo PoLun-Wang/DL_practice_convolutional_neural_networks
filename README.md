@@ -1,6 +1,6 @@
 # Deep Learning practice - CNNs
- - We want to use an easy way to introduce the popular technology of computer vision to people who are interested in this field.
- - These programs are basically modified from the exams in "Neural Networks and Deep Learning" on Coursera. If you want a comprehensive explanation or any tutorial videos, I recommended you enroll in the course "Neural Networks and Deep Learning" on Coursera.
+ - We want to use an easy way to introduce the popular technologies of computer vision to people who are interested in this field.
+ - These programs are basically modified from the exams in "Convolutional Neural Networks" on Coursera. If you want a comprehensive explanation or any tutorial videos, I recommended you enroll in the course on Coursera.
  - If you need more information you could go to my website or leave message to me.
      - [BrilliantCode.net](https://www.brilliantcode.net/)
 
