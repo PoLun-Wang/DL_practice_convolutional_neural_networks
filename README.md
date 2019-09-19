@@ -30,6 +30,7 @@
      - 02.MNIST_using_linear.py
      - 02.MNIST_model_linear.config
      - 02.MNIST_model_linear.weights
+     - 02-04.numbers_groundtruth.json
      - 02-04.images/*
 
 #### Classify MNIST dataset using LeNet-5 model
@@ -42,6 +43,7 @@
     - 03.MNIST_cnn_using_LeNet5.py
     - 03.MNIST_cnn_model_LeNet5.config
     - 03.MNIST_cnn_model_LeNet5.weights
+    - 02-04.numbers_groundtruth.json
     - 02-04.images/*
 
 #### Classify MNIST dataset using VGG-16 model
@@ -57,6 +59,7 @@
     - 04.MNIST_shape224.npz
     - 04.MNIST_cnn_model_VGG16.config
     - 04.MNIST_cnn_model_VGG16.weights
+    - 02-04.numbers_groundtruth.json
     - 02-04.images/*
 
 ## How to use?
