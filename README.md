@@ -51,7 +51,7 @@
     - We used MNIST dataset to train a VGG-16 model *which was modified the numbers of the filter in the final dence layer*. (**04.keras_MNIST_VGG16.py**)
     - And we saved the settings and weights of this model as "**04.MNIST_cnn_model_VGG16.config**" and "**04.MNIST_cnn_model_VGG16.weights**", respectively.
     - In addition, you could run **04.MNIST_cnn_using_VGG16.py** to test this model through the images that I paint by mouse. (These images painted by mouse were put in folder "**02-04.images**".)
-    - Due to the shape of the input layer of VGG-16 is 244x244, so we designed a program for resizing images, and the reized images were saved as **04.MNIST_shape224.npz**. (Run **04.resize_images.py** for resizing images.)
+    - Due to the shape of the input layer of VGG-16 is 224x224, so we designed a program for resizing images, and the reized images were saved as **04.MNIST_shape224.npz**. (Run **04.resize_images.py** for resizing images.)
   - Related files:
     - 04.keras_MNIST_VGG16.py
     - 04.MNIST_cnn_using_VGG16.py
@@ -61,6 +61,28 @@
     - 04.MNIST_cnn_model_VGG16.weights
     - 02-04.numbers_groundtruth.json
     - 02-04.images/*
+
+#### Classify MNIST dataset using LeNet-5 model on the Kaggle competition
+  - Descriptions:
+    - We built a CNNs model based on LeNet-5, and trained it through the MNIST dataset from Kaggle.
+    - First of all, we wrote a program (**05.keras_Kaggle_MNIST_preprocess.py**) to preprocess the MNIST dataset from Kaggle and saved as a npz file called "**05.Kaggle_digit-recognizer.npz**".
+    - After then, use the program "**05.keras_Kaggle_MNIST_train_LeNet5.py**" to train this model. And this program saved the trained model configuration and weights as "**05.MNIST_cnn_model_Kaggle_LeNet5.config**" and "**05.MNIST_cnn_model_Kaggle_LeNet5.weights**", respectively.
+    - Finally, we ran the program (**05.keras_Kaggle_MNIST_test_LeNet5.py**) to predict the test dataset for submission.
+    - **In this model**, we replaced the original activation function (Sigmoid) of LeNet-5 with **ReLU**, and we added **2 dropout layers** into the fully connected layers. And the training **epoch** increased to 100. Everything else in LeNet-5 had no changes.
+    - And the prediction accuracy of this model is 98.528%.
+    - It seems not very high accuracy. As you can see the architecture of this model is quite simple, so I thought the results seem to be acceptable.
+  - Related files:
+    - 05.keras_Kaggle_MNIST_preprocess.py
+    - 05.keras_Kaggle_MNIST_test_LeNet5.py
+    - 05.keras_Kaggle_MNIST_train_LeNet5.py
+    - 05.Kaggle_MNIST_test.csv
+    - 05.Kaggle_MNIST_train.csv
+    - 05.Kaggle_digit-recognizer.npz
+    - 05.Kaggle_prediction_for_submission.csv
+    - 05.MNIST_cnn_model_Kaggle_LeNet5.config
+    - 05.MNIST_cnn_model_Kaggle_LeNet5.weights
+  - Related Links:
+    - [Digit recognizer - Kaggle](https://www.kaggle.com/c/digit-recognizer)
 
 ## How to use?
  - Just fork to your own GitHub or download this repository directly. And run the programs you interested.
