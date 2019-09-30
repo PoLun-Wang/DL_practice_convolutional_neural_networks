@@ -81,8 +81,26 @@
     - 05.Kaggle_prediction_for_submission.csv
     - 05.MNIST_cnn_model_Kaggle_LeNet5.config
     - 05.MNIST_cnn_model_Kaggle_LeNet5.weights
-  - Related Links:
+  - Related links:
     - [Digit recognizer - Kaggle](https://www.kaggle.com/c/digit-recognizer)
+
+#### Classify CIFAR-10 dataset using the model conbined with ResNet and traditional CNNs on the Kaggle competition
+  - Descriptions:
+    - We built this model mainly is using the traditional CNNs to extract features from images, and used the **convolutional block of ResNet** to connect two traditional convolutional layers which have different number of kernels.
+    - The dataset provided by this competition was not really good to use, because it presented as 50,000 PNG for training dataset and 300,000 PNG for testing dataset. As the preprocessing phase, we spent a lot of time to uncompress these images and we met a disaster that PyCharm tried to pre-load the folder full of a bunch of images. Fortunately, we had already preprocessed these images and saved them as npz files.(**06.Kaggle_CIFAR-10_train.npz**, **06.Kaggle_CIFAR-10_test.npz**) If you want to try this competition, just load these npz file by Numpy.
+    - The testing prediction accuracy is 86.63%.
+  - Related files:
+    - 06.CIFAR-10_CombinedNet.config
+    - 06.CIFAR-10_CombinedNet.weights
+    - 06.Kaggle_CIFAR-10_test.npz
+    - 06.Kaggle_CIFAR-10_train.npz
+    - 06.Kaggle_CIFAR-10_trainLabels.csv
+    - 06.Kaggle_submission.csv
+    - 06.keras_Kaggle_CIFAR10_test.py
+    - 06.keras_Kaggle_CIFAR10_train.py
+    - 06.preprocess_Kaggle_CIFAR-10.py
+  - Related links:
+    - [CIFAR-10 - Object Recognition in Images - Kaggle](https://www.kaggle.com/c/cifar-10/)
 
 ## How to use?
  - Just fork to your own GitHub or download this repository directly. And run the programs you interested.
