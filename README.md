@@ -102,6 +102,17 @@
   - Related links:
     - [CIFAR-10 - Object Recognition in Images - Kaggle](https://www.kaggle.com/c/cifar-10/)
 
+#### Classify Kannada-MNIST dataset using CNNs
+  - Descriptions:
+    - We built this model basically mimics the architecture of the VGG16, but the most different design is this model only has 10 CONV layers.
+    - We didn't provide the datasets in this repository. So, if you want to run this model, you have to download the datasets from Kaggle.
+    - The testing prediction accuracy is 97.88%.
+  - Related files:
+    - 07.Keras_Kaggle_Kannada-MNIST.ipynb
+  - Related links:
+    - [A simple model with 10-layer CNNs](https://www.kaggle.com/kernels/scriptcontent/21344726/)
+    - [MNIST like datatset for Kannada handwritten digits - Kaggle](https://www.kaggle.com/c/Kannada-MNIST)
+
 ## How to use?
  - Just fork to your own GitHub or download this repository directly. And run the programs you interested.
 
