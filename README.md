@@ -110,7 +110,7 @@
   - Related files:
     - 07.Keras_Kaggle_Kannada-MNIST.ipynb
   - Related links:
-    - [A simple model with 10-layer CNNs](https://www.kaggle.com/kernels/scriptcontent/21344726/)
+    - [A simple model with 10-layer CNNs](https://www.kaggle.com/polunwang/a-simple-model-with-10-layer-cnns)
     - [MNIST like datatset for Kannada handwritten digits - Kaggle](https://www.kaggle.com/c/Kannada-MNIST)
 
 ## How to use?
